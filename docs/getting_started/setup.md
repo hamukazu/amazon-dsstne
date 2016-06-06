@@ -46,6 +46,11 @@ Once the Docker Image has been created ensure that you start the docker with *pr
 docker run -it --privileged amazon/dsstne /bin/bash
 ```
 
+Or, if you are not a privileged user in the host system, you might have to enter with "sudo" like:
+```bash
+sudo docker run -it --privileged amazon/dsstne /bin/bash
+```
+
 ## Setup on AWS
 You can also launch a [GPU based AWS instance](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using_cluster_computing.html) from *ami-d6f2e6bc* which has all the prerequisites build in properly. The image is currently available in us-east-1 region (N.Virginia in AWS Console). Launch a GPU based instance (*g2.2xlarge*,*g2.8xlarge*) from the AMI. [Download the code and build](#download-the-code-and-build)
 
